@@ -4,7 +4,7 @@ This project was created to simulate a trading environment and recreate the buyi
 
 Real-time stock data provided by [iexcloud.io](url)!
 
-This web app was created using html and css for the front-end. For the back-end, the python framework flask was used along with SQLite to manage the databses storing all the user info.
+This web app was created using HTML and CSS for the front-end. For the back-end, the python framework Flask was used along with SQLite to manage the databses storing all the user info.
 
 <h1>Landing Page</h1>
 
