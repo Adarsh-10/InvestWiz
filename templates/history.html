@@ -17,10 +17,10 @@
         <tbody>
             {% for i in range(0, length) %}
                 <tr>
-                    <td>{{ history[i]["symbol"] }}</td> <!--Correct-->
-                    <td>{{ history[i]["shares"] }}</td> <!--CORRECT-->
-                    <td>{{ history[i]["individualPrice"] | usd }}</td> <!--CHANGE-->
-                    <td>{{ history[i]["datetime"] }}</td> <!--CHANGE-->
+                    <td>{{ history[i]["symbol"] }}</td> 
+                    <td>{{ history[i]["shares"] }}</td> 
+                    <td>{{ history[i]["individualPrice"] | usd }}</td> 
+                    <td>{{ history[i]["datetime"] }}</td> 
                 </tr>
             {% endfor %}
             
