@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(0, length) %}
+                <tr>
+                    <td>{{ history[i]["symbol"] }}</td> <!--Correct-->
+                    <td>{{ history[i]["shares"] }}</td> <!--CORRECT-->
+                    <td>{{ history[i]["individualPrice"] | usd }}</td> <!--CHANGE-->
+                    <td>{{ history[i]["datetime"] }}</td> <!--CHANGE-->
+                </tr>
+            {% endfor %}
+            
+        </tbody>
+    </table>
+
+
+{% endblock %}
